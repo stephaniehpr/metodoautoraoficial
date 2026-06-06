@@ -1,0 +1,24 @@
+{
+  "name": "metodo-autora",
+  "version": "1.0.0",
+  "description": "Página de vendas (one-page) para o produto **Método Autora**, da Prof.ª Dra. Stephanie Ribeiro. Site estático em HTML, CSS e JavaScript — **sem instalação, sem build**. Basta abrir o arquivo ou publicar em qualquer hospedagem.",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metodoautora/site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/metodoautora/site/issues"
+  },
+  "homepage": "https://github.com/metodoautora/site#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "meta": {
+    "title": "Método Autora | Prof.ª Dra. Stephanie Ribeiro",
+    "description": "Formação prática para pesquisadoras que querem transformar confusão em direção, leitura em escrita e insegurança em autonomia acadêmica.",
+    "ogTitle": "Método Autora | Pesquisa, Escrita Científica e Autonomia",
+    "ogDescription": "Um caminho prático para conduzir sua pesquisa com mais clareza, critério e autonomia — da ideia ao texto final."
+  },
+  "config": {
+    "whatsapp": "5585996316778",
+    "whatsappMessage": "Olá! Vim pelo site e quero saber mais sobre o Método Autora.",
+    "checkout": "https://form.respondi.app/1UeCaZ2r"
+  },
+  "brand": {
+    "lead": "Método",
+    "accent": "Autora"
+  },
+  "nav": {
+    "links": [
+      {
+        "label": "O método",
+        "href": "#sobre-o-metodo"
+      },
+      {
+        "label": "Módulos",
+        "href": "#modulos"
+      },
+      {
+        "label": "Para quem é",
+        "href": "#para-quem"
+      },
+      {
+        "label": "A professora",
+        "href": "#professora"
+      },
+      {
+        "label": "Dúvidas",
+        "href": "#faq"
+      }
+    ],
+    "cta": "Quero participar"
+  },
+  "hero": {
+    "eyebrow": "Para mestrandas, doutorandas e pesquisadoras",
+    "title": "Você não precisa de mais conteúdo solto sobre pesquisa.<br><em>Precisa de um caminho.</em>",
+    "lead": "O <strong>Método Autora</strong> é uma formação prática para pesquisadoras que já estudaram muito, mas ainda se sentem perdidas ou inseguras para transformar leitura, ideias e rascunhos em uma pesquisa clara, estruturada e autoral.",
+    "ctaPrimary": "Quero garantir minha vaga",
+    "ctaSecondary": "Entender como funciona",
+    "badges": [
+      "Acesso 100% online",
+      "Estude no seu ritmo",
+      "7 dias de garantia"
+    ],
+    "photo": "assets/Design sem nome.png",
+    "tagName": "Prof.ª Dra. Stephanie Ribeiro",
+    "tagHandle": "@steribeiroprof"
+  },
+  "dores": {
+    "eyebrow": "Se você se identifica com isso, continue lendo",
+    "title": "O problema não é falta de inteligência.<br>É falta de <em>direção</em>.",
+    "lead": "A formação acadêmica te ensina conceitos, teorias e autores. Você lê, sublinha, salva PDFs, faz anotações e acumula referências. Mas, na hora de transformar tudo isso em problema, método, argumento, análise e texto, as peças não se conectam — e a pesquisa não anda no ritmo que poderia.",
+    "items": [
+      {
+        "title": "“Estudo muito, mas continuo travada.”",
+        "text": "Sem direcionamento, seu esforço vira cansaço e frustração, não avanço concreto. E, aos poucos, você começa a duvidar de si mesma."
+      },
+      {
+        "title": "“Não sei se minha pesquisa faz sentido.”",
+        "text": "Você tem tema, leituras e algumas ideias, mas ainda não consegue enxergar com clareza o que realmente quer investigar, qual é o problema central e por que essa pesquisa seria relevante."
+      },
+      {
+        "title": "“Meu texto está confuso e eu não sei como melhorar.”",
+        "text": "Você escreve, apaga, reescreve e revisa no improviso, sem saber exatamente o que manter, cortar ou reorganizar."
+      },
+      {
+        "title": "“Meu referencial parece uma colcha de retalhos.”",
+        "text": "Citação atrás de citação, mas sem fio condutor, sem função clara e sem a sua voz conduzindo o argumento."
+      },
+      {
+        "title": "“Me sinto insegura para tomar decisões na pesquisa.”",
+        "text": "Você até tenta avançar, mas sem critérios claros, passa a depender de validação externa para seguir — e a pesquisa fica mais lenta, pesada e desgastante."
+      },
+      {
+        "title": "“A discussão dos meus dados não sai.”",
+        "text": "Você tem os resultados, mas não consegue transformá-los em análise, argumento e contribuição."
+      }
+    ],
+    "closing": "Quando esse caminho não está claro, você começa a achar que o problema é você. Mas <strong>não é falta de capacidade</strong>. É falta de um processo que te mostre como transformar <strong>repertório em pesquisa</strong>. E isso se aprende.",
+    "cta": "Quero aprender o método"
+  },
+  "metodo": {
+    "eyebrow": "O que é o Método Autora",
+    "title": "Um caminho claro para transformar repertório em <em>pesquisa</em>.",
+    "lead": "O Método Autora é uma formação prática, organizada em módulos, que te conduz passo a passo pelas etapas reais da pesquisa, com mais clareza, critério e <strong>autonomia</strong>.",
+    "paragraph": "Nada de conteúdo solto. Você aprende o que precisa no momento em que precisa aplicar, entendendo o que fazer, por que fazer e como transformar cada decisão em avanço concreto.",
+    "checklist": [
+      "Saia do acúmulo improdutivo e entre em um processo claro e funcional.",
+      "Entenda o que fazer em cada etapa da pesquisa.",
+      "Transforme leitura, ideias e referências em estrutura, argumento e texto.",
+      "Construa introdução, referencial, metodologia e análise com mais coerência.",
+      "Revise sua pesquisa com critérios, sem achar que precisa jogar tudo fora.",
+      "Ganhe segurança para tomar decisões e sustentar seu caminho como pesquisadora."
+    ],
+    "stats": [
+      {
+        "value": "Módulos progressivos",
+        "label": "por etapa da pesquisa"
+      },
+      {
+        "value": "+ materiais",
+        "label": "cadernos, modelos e checklists práticos"
+      },
+      {
+        "value": "Encontros ao vivo",
+        "label": "para dúvidas e direcionamento"
+      },
+      {
+        "value": "7 dias",
+        "label": "de garantia incondicional"
+      }
+    ]
+  },
+  "modulos": {
+    "eyebrow": "O que você vai aprender",
+    "title": "Os módulos do <em>Método Autora</em>",
+    "lead": "Cada módulo resolve um ponto específico que trava a maioria das pesquisadoras.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Comece aqui",
+        "text": "Entenda a lógica do Método Autora e a postura necessária para sair da sensação de incapacidade, lidar com insegurança e começar a agir como autora da própria pesquisa.",
+        "bonus": false
+      },
+      {
+        "num": "02",
+        "title": "Produtividade e execução da pesquisa",
+        "text": "Organize sua rotina de pesquisa sem depender de maratonas, culpa ou rotina perfeita. Aprenda a manter motivação, transformar intenção em tarefas possíveis e sustentar avanço constante.",
+        "bonus": false
+      },
+      {
+        "num": "03",
+        "title": "Delimitação da Pesquisa: do tema à estrutura",
+        "text": "Escolha um tema possível, busque literatura com mais estratégia, organize fichamentos e transforme suas ideias em objeto, recorte, problema, pergunta, objetivos e justificativa.",
+        "bonus": false
+      },
+      {
+        "num": "04",
+        "title": "Fundamentos da escrita científica",
+        "text": "Entenda a função de cada parte do texto, a lógica da linha argumentativa e como construir parágrafos com clareza, direção e uso estratégico das citações.",
+        "bonus": false
+      },
+      {
+        "num": "05",
+        "title": "Referencial teórico: da leitura ao argumento",
+        "text": "Aprenda a ler com foco na escrita, escolher o que entra, organizar autores e conceitos, construir um fio condutor e transformar leitura em argumento.",
+        "bonus": false
+      },
+      {
+        "num": "06",
+        "title": "Introdução: do problema ao texto",
+        "text": "Construa uma introdução que conduz até o problema e apresenta a relevância da pesquisa.",
+        "bonus": false
+      },
+      {
+        "num": "07",
+        "title": "Metodologia: da epistemologia ao método",
+        "text": "Entenda método para além da lista de técnicas. Aprenda a alinhar problema, objetivos, abordagem, estratégia, coleta e análise com mais coerência.",
+        "bonus": false
+      },
+      {
+        "num": "8",
+        "title": "Resultados e discussão: transformando dados em análise",
+        "text": "Organize seus dados, identifique padrões, construa achados, conecte teoria e empiria e transforme resultados em análise e contribuição.",
+        "bonus": false
+      },
+      {
+        "num": "9",
+        "title": "Fechamento e revisão da pesquisa",
+        "text": "Escreva as considerações finais, explicite contribuições e revise seu trabalho com critérios, identificando o que manter, cortar, reorganizar ou aprofundar antes da entrega.",
+        "bonus": false
+      },
+      {
+        "num": "★",
+        "title": "Bônus: materiais de apoio",
+        "text": "Cadernos de implementação, templates, checklists, modelos de fichamento, planilhas de organização, guias práticos e cronograma da pesquisa para aplicar o método no seu próprio trabalho.",
+        "bonus": true
+      },
+      {
+        "num": "★",
+        "title": "Agentes de IA do Método Autora",
+        "text": "Acesso à Clara e a outros agentes de apoio criados para ajudar na estruturação, escrita e revisão da pesquisa, sempre como ferramentas de aplicação do método — não como substitutas da sua autoria.",
+        "bonus": true
+      },
+      {
+        "num": "★",
+        "title": "Encontros ao vivo",
+        "text": "Encontros para dúvidas, direcionamento e aprofundamento, ajudando você a aplicar o método ao seu momento real de pesquisa.",
+        "bonus": true
+      }
+    ]
+  },
+  "paraQuem": {
+    "eyebrow": "Para quem é",
+    "title": "Feito para a sua fase da pesquisa",
+    "yesTitle": "É para você que…",
+    "yesItems": [
+      "já estudou bastante, mas ainda se sente perdida na pesquisa;",
+      "está no mestrado, doutorado, pré-projeto, artigo ou TCC;",
+      "tem dificuldade para transformar leitura em texto;",
+      "sente que sua pesquisa ainda não tem direção clara;",
+      "precisa estruturar ou reorganizar capítulos;",
+      "fica insegura para tomar decisões;",
+      "quer escrever com mais critério, clareza e voz própria;",
+      "deseja conduzir sua pesquisa com mais autonomia."
+    ],
+    "noTitle": "Não é para você que…",
+    "noItems": [
+      "procura uma fórmula pronta para copiar;",
+      "quer terceirizar sua escrita para uma IA;",
+      "espera que alguém faça a pesquisa por você;",
+      "busca apenas formatação, ABNT ou revisão gramatical;",
+      "quer apenas consumir aulas sem aplicar;",
+      "não está disposta a escrever, revisar e participar ativamente do processo."
+    ]
+  },
+  "professora": {
+    "eyebrow": "Quem conduz",
+    "title": "Prof.ª Dra. <em>Stephanie Ribeiro</em>",
+    "lead": "Antropóloga, pesquisadora e mentora acadêmica, Stephanie ajuda mestrandas, doutorandas e pesquisadoras a conduzirem suas pesquisas com mais clareza, critério e autonomia.",
+    "paragraph": "Com formação em Ciências Sociais, Sociologia e Antropologia, atua desde 2019 com pesquisa, escrita científica, metodologia qualitativa, mentorias individuais e formações online para pesquisadoras.<br><br>\n\nAo acompanhar pós-graduandas de diferentes áreas e etapas, percebeu que muitas pessoas inteligentes continuavam travadas não por falta de capacidade, mas por falta de direção, processo e segurança para transformar repertório em pesquisa.<br><br>\n\nFoi dessa experiência que nasceu o Método Autora: uma condução que combina densidade teórica, aplicação prática e acolhimento para ajudar você a pensar, organizar, escrever, revisar e avançar com mais autonomia.",
+    "quote": "“Autonomia na pesquisa não nasce de saber tudo. Nasce de aprender a decidir com critério.”",
+    "instagramUrl": "https://instagram.com/steribeiroprof",
+    "instagramLabel": "Ver no Instagram",
+    "photo": "assets/Design sem nome (1).png"
+  },
+  "depoimentos": {
+    "eyebrow": "Ao aplicar o método",
+    "title": "O que muda na prática",
+    "lead": "O Método Autora foi criado para transformar confusão em direção, esforço disperso em avanço concreto e insegurança em autonomia na pesquisa.",
+    "items": [
+      {
+        "quote": "Você entende qual é o próximo passo da pesquisa e para de gastar tempo e energia tentando avançar no escuro.",
+        "author": "— Do esforço disperso ao avanço concreto"
+      },
+      {
+        "quote": "Você aprende a transformar leitura, ideias e rascunhos em capítulos com função, lógica e fio condutor — reduzindo retrabalho na escrita e na revisão.",
+        "author": "— Da confusão ao texto organizado"
+      },
+      {
+        "quote": "Você desenvolve critérios para tomar decisões, revisar o caminho e depender menos de validação externa para seguir.",
+        "author": "— Da insegurança à autoria"
+      }
+    ]
+  },
+  "oferta": {
+    "eyebrow": "A sua vaga",
+    "title": "Comece hoje a pesquisar com <em>método</em>",
+    "listTitle": "Ao entrar no Método Autora, você recebe:",
+    "listItems": [
+      "<strong>módulos práticos</strong> organizados por etapa da pesquisa;",
+      "<strong>cadernos de implementação</strong> e exercícios guiados;",
+      "<strong>roteiros de escrita</strong>, templates e checklists;",
+      "planilhas, cronograma e <strong>modelo de fichamento estratégico</strong>;",
+      "<strong>encontros ao vivo</strong> para dúvidas e direcionamento;",
+      "<strong>agentes de IA de apoio</strong>, como a Clara;",
+      "<strong>acesso online por 1 ano</strong> a todos os conteúdos;",
+      "<strong>7 dias de garantia</strong> incondicional."
+    ],
+    "priceFrom": "PRÉ-VENDA ABERTA",
+    "priceLabel": "até dia 08/06",
+    "installments": "  ",
+    "priceValue": "Formulário de Aplicação",
+    "priceCents": "  ",
+    "cash": "Preencha o formulário para eu entender seu momento de pesquisa e avaliar se o Método Autora faz sentido para você agora.",
+    "ctaLabel": "Quero preencher o formulário",
+    "whatsappLabel": "Prefiro falar no WhatsApp antes",
+    "safe": "🔒 Sem compromisso · Retorno em até 48h úteis"
+  },
+  "garantia": {
+    "seal": "7",
+    "sealUnit": "dias",
+    "title": "Garantia incondicional",
+    "lead": "Faça sua inscrição com tranquilidade. Você tem <strong>7 dias</strong> de garantia incondicional. Se, dentro desse prazo, sentir que o Método Autora não faz sentido para o seu momento, devolvemos 100% do seu investimento."
+  },
+  "faq": {
+    "eyebrow": "Perguntas frequentes",
+    "title": "Ainda com dúvidas?",
+    "items": [
+      {
+        "q": "Para que serve o Método Autora?",
+        "a": "O Método Autora é uma formação online para pesquisadoras que querem conduzir sua pesquisa com mais clareza, critério e autonomia. Você aprende a transformar repertório em pesquisa: delimitar melhor o problema, organizar leituras, estruturar capítulos, construir metodologia, escrever com mais direção, analisar dados e revisar o trabalho com mais segurança."
+      },
+      {
+        "q": "Para quem é o Método Autora?",
+        "a": "É para mestrandas, doutorandas e pesquisadoras que já estudam, leem e tentam avançar, mas sentem que a pesquisa ainda está confusa, solta ou sem direção. Também pode ajudar quem está em pré-projeto, processo seletivo, TCC, artigo ou retomando a escrita acadêmica."
+      },
+      {
+        "q": "Por quanto tempo é o acesso?",
+        "a": "Você terá acesso online por 1 ano a todos os conteúdos disponíveis na plataforma."
+      },
+      {
+        "q": "Como funcionam os encontros ao vivo?",
+        "a": "Os encontros ao vivo são espaços para dúvidas, aprofundamento e direcionamento. Eles servem para ajudar você a aplicar o método ao seu momento real de pesquisa. Os encontros também ficarão gravados e disponíveis na plataforma para quem não puder participar ao vivo."
+      },
+      {
+        "q": "E se eu não tiver muito tempo?",
+        "a": "O Método Autora foi pensado para caber na vida real. Você não precisa maratonar aulas nem fazer tudo de uma vez. A ideia é aprender o que precisa, no momento em que precisa aplicar, para parar de gastar tempo e energia tentando avançar no improviso."
+      },
+      {
+        "q": "O Método Autora é uma mentoria individual?",
+        "a": "Não. O Método Autora é uma formação online, com aulas, materiais de implementação, encontros ao vivo e suporte pela plataforma. Ele não funciona como mentoria individual, mas oferece um caminho estruturado para você aplicar o método na sua própria pesquisa."
+      },
+      {
+        "q": "Meu texto será corrigido?",
+        "a": "Não é um serviço de revisão, correção ou reescrita do seu texto. O Método Autora ensina você a revisar com critérios, identificar problemas de estrutura, reorganizar capítulos e tomar decisões com mais autonomia. Em encontros e suportes, posso orientar dúvidas e exemplos, mas não há correção integral de trabalhos individuais."
+      },
+      {
+        "q": "O método usa IA para escrever no meu lugar?",
+        "a": "Não. A proposta é fortalecer sua autoria. O Método Autora pode incluir agentes de IA de apoio, como a Clara, para ajudar na estruturação, escrita e revisão, mas sempre como ferramentas de aplicação do método — não como substitutas da sua voz, das suas decisões ou da sua responsabilidade pela pesquisa."
+      },
+      {
+        "q": "Tem garantia?",
+        "a": "Sim. Você tem 7 dias de garantia incondicional a partir da compra. Se, dentro desse prazo, sentir que o Método Autora não faz sentido para o seu momento, pode solicitar o reembolso integral conforme as regras da plataforma e o Código de Defesa do Consumidor."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "A sua pesquisa continua sendo sua. O <em>método</em> existe para te ajudar a conduzir melhor o caminho.",
+    "lead": "Dê o próximo passo para sair da confusão, transformar repertório em pesquisa e avançar com mais clareza, critério e autonomia.",
+    "cta": "Quero garantir minha vaga"
+  },
+  "footer": {
+    "profLine": "Prof.ª Dra. Stephanie Ribeiro · @steribeiroprof",
+    "whatsappLabel": "Falar no WhatsApp",
+    "instagramUrl": "https://instagram.com/steribeiroprof",
+    "instagramLabel": "Instagram",
+    "email": "metodoautora@gmail.com"
+  }
+}

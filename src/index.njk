@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ site.meta.title }}</title>
+  <meta name="description" content="{{ site.meta.description }}" />
+  <meta property="og:title" content="{{ site.meta.ogTitle }}" />
+  <meta property="og:description" content="{{ site.meta.ogDescription }}" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#topo" class="nav__brand">{{ site.brand.lead }}<span>{{ site.brand.accent }}</span></a>
+      <nav class="nav__links">
+        {%- for link in site.nav.links %}
+        <a href="{{ link.href }}">{{ link.label }}</a>
+        {%- endfor %}
+      </nav>
+      <a href="#oferta" class="btn btn--small">{{ site.nav.cta }}</a>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="topo">
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <span class="eyebrow">{{ site.hero.eyebrow }}</span>
+        <h1>{{ site.hero.title | safe }}</h1>
+        <p class="hero__lead">{{ site.hero.lead | safe }}</p>
+        <div class="hero__cta">
+          <a href="#oferta" class="btn btn--lg">{{ site.hero.ctaPrimary }}</a>
+          <a href="#sobre-o-metodo" class="btn btn--ghost btn--lg">{{ site.hero.ctaSecondary }}</a>
+        </div>
+        <ul class="hero__badges">
+          {%- for badge in site.hero.badges %}
+          <li>✓ {{ badge }}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div class="hero__media reveal">
+        <div class="hero__photo" role="img" aria-label="{{ site.hero.tagName }}" style="--hero-photo: url('{{ site.hero.photo }}')"></div>
+        <div class="hero__tag">
+          <span class="hero__tag-name">{{ site.hero.tagName }}</span>
+          <span class="hero__tag-handle">{{ site.hero.tagHandle }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOR / IDENTIFICAÇÃO ===================== -->
+  <section class="section section--cream" id="dores">
+    <div class="container narrow center">
+      <span class="eyebrow eyebrow--dark reveal">{{ site.dores.eyebrow }}</span>
+      <h2 class="reveal">{{ site.dores.title | safe }}</h2>
+      <p class="lead reveal">{{ site.dores.lead | safe }}</p>
+    </div>
+    <div class="container pain-grid">
+      {%- for pain in site.dores.items %}
+      <div class="pain reveal">
+        <h3>{{ pain.title }}</h3>
+        <p>{{ pain.text }}</p>
+      </div>
+      {%- endfor %}
+    </div>
+    <div class="container center">
+      <p class="lead reveal" style="max-width:720px;margin-inline:auto;">{{ site.dores.closing | safe }}</p>
+      <a href="#oferta" class="btn btn--lg reveal">{{ site.dores.cta }}</a>
+    </div>
+  </section>
+
+  <!-- ===================== O MÉTODO ===================== -->
+  <section class="section" id="sobre-o-metodo">
+    <div class="container two-col">
+      <div class="reveal">
+        <span class="eyebrow eyebrow--dark">{{ site.metodo.eyebrow }}</span>
+        <h2>{{ site.metodo.title | safe }}</h2>
+        <p class="lead">{{ site.metodo.lead | safe }}</p>
+        <p>{{ site.metodo.paragraph | safe }}</p>
+        <ul class="checklist">
+          {%- for item in site.metodo.checklist %}
+          <li>{{ item }}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div class="stat-card reveal">
+        {%- for stat in site.metodo.stats %}
+        <div class="stat">
+          <strong>{{ stat.value }}</strong>
+          <span>{{ stat.label }}</span>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MÓDULOS ===================== -->
+  <section class="section section--dark" id="modulos">
+    <div class="container center">
+      <span class="eyebrow reveal">{{ site.modulos.eyebrow }}</span>
+      <h2 class="reveal">{{ site.modulos.title | safe }}</h2>
+      <p class="lead lead--light reveal">{{ site.modulos.lead }}</p>
+    </div>
+    <div class="container modules">
+      {%- for mod in site.modulos.items %}
+      <article class="module{% if mod.bonus %} module--bonus{% endif %} reveal">
+        <span class="module__num">{{ mod.num }}</span>
+        <h3>{{ mod.title }}</h3>
+        <p>{{ mod.text }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <!-- ===================== PARA QUEM É ===================== -->
+  <section class="section section--cream" id="para-quem">
+    <div class="container center">
+      <span class="eyebrow eyebrow--dark reveal">{{ site.paraQuem.eyebrow }}</span>
+      <h2 class="reveal">{{ site.paraQuem.title | safe }}</h2>
+    </div>
+    <div class="container for-grid">
+      <div class="for-card for-card--yes reveal">
+        <h3>{{ site.paraQuem.yesTitle }}</h3>
+        <ul>
+          {%- for item in site.paraQuem.yesItems %}
+          <li>{{ item }}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+      <div class="for-card for-card--no reveal">
+        <h3>{{ site.paraQuem.noTitle }}</h3>
+        <ul>
+          {%- for item in site.paraQuem.noItems %}
+          <li>{{ item }}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== A PROFESSORA ===================== -->
+  <section class="section" id="professora">
+    <div class="container two-col two-col--reverse">
+      <div class="prof__photo reveal" role="img" aria-label="{{ site.hero.tagName }}" style="--prof-photo: url('{{ site.professora.photo }}')"></div>
+      <div class="reveal">
+        <span class="eyebrow eyebrow--dark">{{ site.professora.eyebrow }}</span>
+        <h2>{{ site.professora.title | safe }}</h2>
+        <p class="lead">{{ site.professora.lead | safe }}</p>
+        <p>{{ site.professora.paragraph | safe }}</p>
+        <blockquote class="quote">{{ site.professora.quote }}</blockquote>
+        <a href="{{ site.professora.instagramUrl }}" target="_blank" rel="noopener" class="btn btn--ghost">{{ site.professora.instagramLabel }}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEPOIMENTOS ===================== -->
+  <section class="section section--dark" id="depoimentos">
+    <div class="container center">
+      <span class="eyebrow reveal">{{ site.depoimentos.eyebrow }}</span>
+      <h2 class="reveal">{{ site.depoimentos.title | safe }}</h2>
+      <p class="lead lead--light reveal">{{ site.depoimentos.lead }}</p>
+    </div>
+    <div class="container testimonials">
+      {%- for dep in site.depoimentos.items %}
+      <figure class="testimonial reveal">
+        <blockquote>{{ dep.quote }}</blockquote>
+        <figcaption>{{ dep.author }}</figcaption>
+      </figure>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <!-- ===================== OFERTA / PREÇO ===================== -->
+  <section class="section section--cream" id="oferta">
+    <div class="container center">
+      <span class="eyebrow eyebrow--dark reveal">{{ site.oferta.eyebrow }}</span>
+      <h2 class="reveal">{{ site.oferta.title | safe }}</h2>
+    </div>
+    <div class="container">
+      <div class="offer reveal">
+        <div class="offer__list">
+          <h3>{{ site.oferta.listTitle }}</h3>
+          <ul class="checklist">
+            {%- for item in site.oferta.listItems %}
+            <li>{{ item | safe }}</li>
+            {%- endfor %}
+          </ul>
+        </div>
+        <div class="offer__price">
+          <span class="offer__from">De <s>R$ {{ site.oferta.priceFrom }}</s></span>
+          <span class="offer__label">{{ site.oferta.priceLabel }}</span>
+          <span class="offer__value"><small>{{ site.oferta.installments }}</small> R$ {{ site.oferta.priceValue }}<sup>{{ site.oferta.priceCents }}</sup></span>
+          <span class="offer__cash">{{ site.oferta.cash }}</span>
+          <a href="#" class="btn btn--lg btn--block" data-checkout>{{ site.oferta.ctaLabel }}</a>
+          <a href="#" class="offer__whatsapp" data-whatsapp>{{ site.oferta.whatsappLabel }}</a>
+          <p class="offer__safe">{{ site.oferta.safe }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GARANTIA ===================== -->
+  <section class="section">
+    <div class="container narrow center guarantee reveal">
+      <div class="guarantee__seal">{{ site.garantia.seal }}<small>{{ site.garantia.sealUnit }}</small></div>
+      <h2>{{ site.garantia.title }}</h2>
+      <p class="lead">{{ site.garantia.lead | safe }}</p>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section section--cream" id="faq">
+    <div class="container narrow">
+      <div class="center">
+        <span class="eyebrow eyebrow--dark reveal">{{ site.faq.eyebrow }}</span>
+        <h2 class="reveal">{{ site.faq.title }}</h2>
+      </div>
+      <div class="faq">
+        {%- for item in site.faq.items %}
+        <details class="faq__item reveal">
+          <summary>{{ item.q }}</summary>
+          <p>{{ item.a | safe }}</p>
+        </details>
+        {%- endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="section section--dark final-cta">
+    <div class="container narrow center reveal">
+      <h2>{{ site.finalCta.title | safe }}</h2>
+      <p class="lead lead--light">{{ site.finalCta.lead | safe }}</p>
+      <a href="#oferta" class="btn btn--lg">{{ site.finalCta.cta }}</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <span class="nav__brand nav__brand--light">{{ site.brand.lead }}<span>{{ site.brand.accent }}</span></span>
+        <p>{{ site.footer.profLine }}</p>
+      </div>
+      <div class="footer__contact">
+        <a href="#" data-whatsapp>{{ site.footer.whatsappLabel }}</a>
+        <a href="{{ site.footer.instagramUrl }}" target="_blank" rel="noopener">{{ site.footer.instagramLabel }}</a>
+        <a href="mailto:{{ site.footer.email }}">{{ site.footer.email }}</a>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <p>© <span id="ano"></span> Método Autora · Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== BOTÃO WHATSAPP FLUTUANTE ===================== -->
+  <a href="#" class="whatsapp-float" data-whatsapp aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+      <path fill="currentColor" d="M16.003 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.257.59 4.46 1.71 6.4L3.2 28.8l6.57-1.72a12.74 12.74 0 0 0 6.233 1.59h.005c7.06 0 12.8-5.74 12.8-12.8s-5.745-12.67-12.805-12.67Zm0 23.04h-.004a10.6 10.6 0 0 1-5.4-1.48l-.387-.23-4.003 1.05 1.07-3.9-.252-.4a10.56 10.56 0 0 1-1.62-5.64c0-5.86 4.77-10.63 10.64-10.63 2.84 0 5.51 1.11 7.52 3.12a10.55 10.55 0 0 1 3.114 7.52c-.003 5.86-4.773 10.63-10.633 10.63Zm5.83-7.96c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.71.16-.21.32-.82 1.04-1 1.25-.18.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.22-.18-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.18.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.71-.97-2.34-.26-.62-.52-.54-.71-.55l-.6-.01c-.21 0-.55.08-.84.4-.29.32-1.1 1.08-1.1 2.62 0 1.55 1.13 3.04 1.29 3.25.16.21 2.22 3.39 5.38 4.76.75.32 1.34.51 1.8.66.76.24 1.44.21 1.98.13.6-.09 1.89-.77 2.16-1.52.27-.74.27-1.38.19-1.52-.08-.13-.29-.21-.61-.37Z"/>
+    </svg>
+  </a>
+
+  <script>window.SITE_CONFIG = {{ site.config | dump | safe }};</script>
+  <script src="script.js"></script>
+</body>
+</html>

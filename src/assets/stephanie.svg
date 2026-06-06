@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f5446"/>
+      <stop offset="1" stop-color="#1b332b"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#g)"/>
+  <g fill="none" stroke="#e8a07a" stroke-width="3" opacity="0.55">
+    <circle cx="400" cy="400" r="120"/>
+    <path d="M220 760c0-110 80-190 180-190s180 80 180 190"/>
+  </g>
+  <text x="400" y="900" text-anchor="middle" fill="#f6f1e7" font-family="Georgia, serif" font-size="34" font-style="italic">Foto da Stephanie</text>
+  <text x="400" y="945" text-anchor="middle" fill="#e8a07a" font-family="Arial, sans-serif" font-size="22">troque por uma foto real aqui</text>
+</svg>

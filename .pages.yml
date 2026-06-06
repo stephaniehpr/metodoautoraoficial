@@ -1,0 +1,239 @@
+media:
+  input: src/assets
+  output: assets
+  categories: [image]
+
+content:
+  - name: site
+    label: Conteúdo do site
+    type: file
+    path: src/_data/site.json
+    format: json
+    fields:
+      - name: meta
+        label: SEO e compartilhamento
+        type: object
+        fields:
+          - { name: title, label: Título da aba (SEO), type: string }
+          - { name: description, label: Descrição (SEO), type: text }
+          - { name: ogTitle, label: Título ao compartilhar no WhatsApp/redes, type: string }
+          - { name: ogDescription, label: Descrição ao compartilhar, type: text }
+
+      - name: config
+        label: WhatsApp e pagamento
+        type: object
+        fields:
+          - { name: whatsapp, label: "Número do WhatsApp (só dígitos, ex.: 5511999999999)", type: string }
+          - { name: whatsappMessage, label: Mensagem que já aparece no WhatsApp, type: text }
+          - { name: checkout, label: "Link de pagamento (Hotmart, Kiwify, etc.)", type: string }
+
+      - name: brand
+        label: Logo / nome da marca
+        type: object
+        fields:
+          - { name: lead, label: Primeira parte do nome, type: string }
+          - { name: accent, label: Segunda parte (em destaque), type: string }
+
+      - name: nav
+        label: Menu de navegação
+        type: object
+        fields:
+          - name: links
+            label: Itens do menu
+            type: object
+            list:
+              collapsible:
+                summary: "{label}"
+            fields:
+              - { name: label, label: Texto, type: string }
+              - { name: href, label: "Âncora (ex.: #modulos)", type: string }
+          - { name: cta, label: Texto do botão do menu, type: string }
+
+      - name: hero
+        label: Topo (Hero)
+        type: object
+        fields:
+          - { name: eyebrow, label: Frase pequena acima do título, type: string }
+          - { name: title, label: Título principal, type: text, description: "Use <em>palavra</em> para destacar e <br> para quebrar linha." }
+          - { name: lead, label: Parágrafo de apresentação, type: text, description: "Pode usar <strong>palavra</strong> para negrito." }
+          - { name: ctaPrimary, label: Botão principal, type: string }
+          - { name: ctaSecondary, label: Botão secundário, type: string }
+          - name: badges
+            label: Selos (com ✓)
+            type: string
+            list: true
+          - { name: photo, label: Foto do topo (vertical 4:5), type: image }
+          - { name: tagName, label: Nome na etiqueta da foto, type: string }
+          - { name: tagHandle, label: "@ na etiqueta da foto", type: string }
+
+      - name: dores
+        label: Seção "Dores / Identificação"
+        type: object
+        fields:
+          - { name: eyebrow, label: Frase pequena, type: string }
+          - { name: title, label: Título, type: text, description: "Use <em> </em> e <br>." }
+          - { name: lead, label: Parágrafo de introdução, type: text }
+          - name: items
+            label: Cartões de dor
+            type: object
+            list:
+              collapsible:
+                summary: "{title}"
+            fields:
+              - { name: title, label: Frase (entre aspas), type: text }
+              - { name: text, label: Explicação, type: text }
+          - { name: closing, label: Parágrafo de fechamento, type: text, description: "Pode usar <strong> </strong>." }
+          - { name: cta, label: Texto do botão, type: string }
+
+      - name: metodo
+        label: Seção "O método"
+        type: object
+        fields:
+          - { name: eyebrow, label: Frase pequena, type: string }
+          - { name: title, label: Título, type: text, description: "Use <em> </em>." }
+          - { name: lead, label: Parágrafo destaque, type: text, description: "Pode usar <strong> </strong>." }
+          - { name: paragraph, label: Parágrafo complementar, type: text }
+          - name: checklist
+            label: Lista de benefícios (com ✓)
+            type: string
+            list: true
+          - name: stats
+            label: Números / estatísticas
+            type: object
+            list:
+              collapsible:
+                summary: "{value} — {label}"
+            fields:
+              - { name: value, label: Número/destaque, type: string }
+              - { name: label, label: Descrição, type: string }
+
+      - name: modulos
+        label: Seção "Módulos"
+        type: object
+        fields:
+          - { name: eyebrow, label: Frase pequena, type: string }
+          - { name: title, label: Título, type: text, description: "Use <em> </em>." }
+          - { name: lead, label: Parágrafo de introdução, type: text }
+          - name: items
+            label: Módulos
+            type: object
+            list:
+              collapsible:
+                summary: "{num} — {title}"
+            fields:
+              - { name: num, label: "Número (ou ★ para bônus)", type: string }
+              - { name: title, label: Título do módulo, type: string }
+              - { name: text, label: Descrição, type: text }
+              - { name: bonus, label: É o cartão bônus? (destaque laranja), type: boolean }
+
+      - name: paraQuem
+        label: Seção "Para quem é"
+        type: object
+        fields:
+          - { name: eyebrow, label: Frase pequena, type: string }
+          - { name: title, label: Título, type: text }
+          - { name: yesTitle, label: Título da coluna "É para você", type: string }
+          - name: yesItems
+            label: Itens "É para você"
+            type: string
+            list: true
+          - { name: noTitle, label: Título da coluna "Não é para você", type: string }
+          - name: noItems
+            label: Itens "Não é para você"
+            type: string
+            list: true
+
+      - name: professora
+        label: Seção "A professora"
+        type: object
+        fields:
+          - { name: eyebrow, label: Frase pequena, type: string }
+          - { name: title, label: Título, type: text, description: "Use <em> </em>." }
+          - { name: lead, label: Parágrafo destaque, type: text }
+          - { name: paragraph, label: Parágrafo, type: text, description: "Pode usar <strong> </strong>." }
+          - { name: quote, label: Citação em destaque, type: text }
+          - { name: instagramUrl, label: Link do Instagram, type: string }
+          - { name: instagramLabel, label: Texto do botão do Instagram, type: string }
+          - { name: photo, label: Foto da professora (vertical 4:5), type: image }
+
+      - name: depoimentos
+        label: Seção "Depoimentos"
+        type: object
+        fields:
+          - { name: eyebrow, label: Frase pequena, type: string }
+          - { name: title, label: Título, type: text }
+          - { name: lead, label: Parágrafo de introdução, type: text }
+          - name: items
+            label: Depoimentos
+            type: object
+            list:
+              collapsible:
+                summary: "{author}"
+            fields:
+              - { name: quote, label: Depoimento (entre aspas), type: text }
+              - { name: author, label: Autora, type: string }
+
+      - name: oferta
+        label: Seção "Oferta / Preço"
+        type: object
+        fields:
+          - { name: eyebrow, label: Frase pequena, type: string }
+          - { name: title, label: Título, type: text, description: "Use <em> </em>." }
+          - { name: listTitle, label: Título da lista de itens, type: string }
+          - name: listItems
+            label: Itens inclusos
+            type: text
+            list: true
+            description: "Pode usar <strong> </strong>."
+          - { name: priceFrom, label: "Preço cheio (sem R$, ex.: 997)", type: string }
+          - { name: priceLabel, label: "Texto antes do preço (ex.: por apenas)", type: string }
+          - { name: installments, label: "Parcelas (ex.: 12x de)", type: string }
+          - { name: priceValue, label: "Valor da parcela (ex.: 97)", type: string }
+          - { name: priceCents, label: "Centavos (ex.: ,00)", type: string }
+          - { name: cash, label: "Texto à vista (ex.: ou R$ 997 à vista)", type: string }
+          - { name: ctaLabel, label: Texto do botão de compra, type: string }
+          - { name: whatsappLabel, label: Texto do link de WhatsApp, type: string }
+          - { name: safe, label: Frase de segurança, type: string }
+
+      - name: garantia
+        label: Seção "Garantia"
+        type: object
+        fields:
+          - { name: seal, label: "Número do selo (ex.: 7)", type: string }
+          - { name: sealUnit, label: "Unidade do selo (ex.: dias)", type: string }
+          - { name: title, label: Título, type: string }
+          - { name: lead, label: Texto da garantia, type: text, description: "Pode usar <strong> </strong>." }
+
+      - name: faq
+        label: Seção "Dúvidas (FAQ)"
+        type: object
+        fields:
+          - { name: eyebrow, label: Frase pequena, type: string }
+          - { name: title, label: Título, type: string }
+          - name: items
+            label: Perguntas
+            type: object
+            list:
+              collapsible:
+                summary: "{q}"
+            fields:
+              - { name: q, label: Pergunta, type: string }
+              - { name: a, label: Resposta, type: text }
+
+      - name: finalCta
+        label: Chamada final
+        type: object
+        fields:
+          - { name: title, label: Título, type: text, description: "Use <em> </em>." }
+          - { name: lead, label: Parágrafo, type: text }
+          - { name: cta, label: Texto do botão, type: string }
+
+      - name: footer
+        label: Rodapé
+        type: object
+        fields:
+          - { name: profLine, label: Linha com nome/@, type: string }
+          - { name: whatsappLabel, label: Texto do link de WhatsApp, type: string }
+          - { name: instagramUrl, label: Link do Instagram, type: string }
+          - { name: instagramLabel, label: Texto do link do Instagram, type: string }
+          - { name: email, label: E-mail de contato, type: string }
