@@ -195,9 +195,9 @@
           </ul>
         </div>
         <div class="offer__price">
-          <span class="offer__from">De <s>R$ {{ site.oferta.priceFrom }}</s></span>
+          <span class="offer__from">{{ site.oferta.priceFrom }}</span>
           <span class="offer__label">{{ site.oferta.priceLabel }}</span>
-          <span class="offer__value"><small>{{ site.oferta.installments }}</small> R$ {{ site.oferta.priceValue }}<sup>{{ site.oferta.priceCents }}</sup></span>
+          <span class="offer__value">{{ site.oferta.priceValue }}</span>
           <span class="offer__cash">{{ site.oferta.cash }}</span>
           <a href="#" class="btn btn--lg btn--block" data-checkout>{{ site.oferta.ctaLabel }}</a>
           <a href="#" class="offer__whatsapp" data-whatsapp>{{ site.oferta.whatsappLabel }}</a>

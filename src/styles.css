@@ -166,6 +166,7 @@ p { margin: 0 0 1rem; }
 .section--dark h2, .section--dark h3 { color: var(--cream); }
 
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.two-col > * { min-width: 0; }
 .two-col--reverse .prof__photo { order: -1; }
 
 /* ---------- Dores ---------- */
@@ -194,11 +195,12 @@ p { margin: 0 0 1rem; }
 /* ---------- Stat card ---------- */
 .stat-card {
   display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
+  width: 100%; max-width: 100%; min-width: 0;
   background: var(--line); border-radius: var(--radius); overflow: hidden;
   box-shadow: var(--shadow);
 }
-.stat { background: var(--paper); padding: 30px 26px; display: flex; flex-direction: column; gap: .3rem; }
-.stat strong { font-family: var(--font-serif); font-size: 2rem; color: var(--terra); }
+.stat { background: var(--paper); padding: 30px 26px; display: flex; flex-direction: column; gap: .3rem; min-width: 0; }
+.stat strong { font-family: var(--font-serif); font-size: 2rem; color: var(--terra); overflow-wrap: break-word; }
 .stat span { color: var(--muted); font-size: .96rem; }
 
 /* ---------- Módulos ---------- */
@@ -357,7 +359,7 @@ p { margin: 0 0 1rem; }
   .testimonials { grid-template-columns: 1fr; }
   .for-grid { grid-template-columns: 1fr; }
   .offer { grid-template-columns: 1fr; max-width: 560px; }
-  .stat-card { max-width: 520px; }
+  .stat-card { max-width: 520px; margin-inline: auto; }
 }
 
 @media (max-width: 560px) {
@@ -365,7 +367,7 @@ p { margin: 0 0 1rem; }
   .hero { padding: 116px 0 64px; }
   .modules { grid-template-columns: 1fr; }
   .pain-grid { grid-template-columns: 1fr; }
-  .stat-card { grid-template-columns: 1fr 1fr; }
+  .stat-card { grid-template-columns: 1fr; max-width: 100%; }
   .offer__list, .offer__price { padding: 30px 24px; }
   .hero__tag { left: 12px; }
   .nav__brand { font-size: 1.2rem; }
